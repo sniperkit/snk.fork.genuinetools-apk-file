@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package main
 
 import (
@@ -14,9 +19,10 @@ import (
 	"text/tabwriter"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/genuinetools/apk-file/version"
 	"github.com/genuinetools/pkg/cli"
 	"github.com/sirupsen/logrus"
+
+	"github.com/sniperkit/snk.fork.genuinetools-apk-file/version"
 )
 
 const (
