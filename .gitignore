@@ -29,6 +29,10 @@ _testmain.go
 *.exe
 *.test
 
+vendor
+vendor/
+vendor/*
+vendor/**
 
 ###OSX###
 
