@@ -1,6 +1,8 @@
 # Sniperkit-Bot
 # - Status: analyzed
 
+# apk-file
+
 ###Go###
 
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
@@ -46,6 +48,7 @@ Icon
 .Trashes
 
 apk-file
+!cmd/apk-file
 cross/
 
 # Go coverage results

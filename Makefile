@@ -3,7 +3,8 @@ PREFIX?=$(shell pwd)
 
 # Setup name variables for the package/tool
 NAME := apk-file
-PKG := github.com/genuinetools/$(NAME)
+PKG := github.com/sniperkit/snk.fork.genuinetools-apk-file
+# /$(NAME)
 
 # Set any default go build tags
 BUILDTAGS :=
@@ -41,7 +42,7 @@ static: ## Builds a static executable
 	@echo "+ $@"
 	CGO_ENABLED=0 $(GO) build \
 				-tags "$(BUILDTAGS) static_build" \
-				${GO_LDFLAGS_STATIC} -o $(NAME) .
+				${GO_LDFLAGS_STATIC} -o $(NAME) ./cmd/${NAME}
 
 all: clean build fmt lint test staticcheck vet install ## Runs a clean, build, fmt, lint, test, staticcheck, vet and install
 

@@ -1,0 +1,44 @@
+hash: 0d718deb5347be49e14f9d1aff03e724f4bbe320e1dd2816b2f4856643c14774
+updated: 2018-08-30T13:36:15.319285886+02:00
+imports:
+- name: github.com/agrison/go-tablib
+  version: 4930582c22eec7bfc0e5b47e0246d5048a78fe49
+- name: github.com/agrison/mxj
+  version: 1269f8afb3b42d0e7b9cf60041e8e187727c88d6
+- name: github.com/andybalholm/cascadia
+  version: 901648c87902174f774fac311d7f176f8647bdaa
+- name: github.com/bndr/gotabulate
+  version: bc555436bfd5d4e93a2dd35b462ce37e067afdda
+- name: github.com/fatih/structs
+  version: ebf56d35bba727c68ac77f56f2fcf90b181851aa
+- name: github.com/genuinetools/pkg
+  version: 4038376dadd53f913de41663feae408ef23c8e8a
+  subpackages:
+  - cli
+- name: github.com/ghodss/yaml
+  version: c7ce16629ff4cd059ed96ed06419dd3856fd3577
+- name: github.com/mattn/go-runewidth
+  version: ce7b0b5c7b45a81508558cd1dba6bb1e4ddb51bb
+- name: github.com/PuerkitoBio/goquery
+  version: dc2ec5c7ca4d9aae063b79b9f581dd3ea6afd2b2
+- name: github.com/sirupsen/logrus
+  version: 3e01752db0189b9157070a0e1668a620f9a85da2
+- name: github.com/tealeg/xlsx
+  version: f36fa3be8893d528004c0938e06b65c67f69b76f
+- name: golang.org/x/crypto
+  version: 614d502a4dac94afa3a6ce146bd1736da82514c6
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/net
+  version: 8a410e7b638dca158bf9e766925842f6651ff828
+  subpackages:
+  - html
+  - html/atom
+- name: golang.org/x/sys
+  version: d99a578cf41bfccdeaf48b0845c823a4b8b0ad5e
+  subpackages:
+  - unix
+  - windows
+- name: gopkg.in/yaml.v2
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
+testImports: []

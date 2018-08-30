@@ -1,0 +1,9 @@
+package: github.com/sniperkit/snk.fork.genuinetools-apk-file
+import:
+- package: github.com/PuerkitoBio/goquery
+- package: github.com/agrison/go-tablib
+- package: github.com/genuinetools/pkg
+  subpackages:
+  - cli
+- package: github.com/ghodss/yaml
+- package: github.com/sirupsen/logrus
