@@ -282,7 +282,7 @@ func getFilesInfo(d *goquery.Document) []fileInfo {
 			case 4:
 				f.arch = s.Text()
 			default:
-				logrus.Warn("Unmapped value for column %d with value %s", i, s.Text())
+				logrus.Warnf("Unmapped value for column %d with value %s", i, s.Text())
 			}
 		})
 		files = append(files, f)

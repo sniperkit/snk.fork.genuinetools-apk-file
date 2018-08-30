@@ -44,7 +44,15 @@ static: ## Builds a static executable
 				-tags "$(BUILDTAGS) static_build" \
 				${GO_LDFLAGS_STATIC} -o $(NAME) ./cmd/${NAME}
 
-all: clean build fmt lint test staticcheck vet install ## Runs a clean, build, fmt, lint, test, staticcheck, vet and install
+all: clean deps build fmt lint test staticcheck vet install ## Runs a clean, build, fmt, lint, test, staticcheck, vet and install
+
+GOLINT := $(shell which golint)
+STATICHECK := $(shell which staticcheck)
+
+.PHONY: deps
+deps:
+	@if [ $(GOLINT) == "" ]; then go get -u golang.org/x/lint/golint ; else echo " - GOLINT: $(GOLINT)"; fi
+	@if [ $(STATICHECK) == "" ]; then go get -u honnef.co/go/tools/cmd/staticcheck ; else echo " - STATICHECK: $(STATICHECK)"; fi
 
 .PHONY: fmt
 fmt: ## Verifies all files have been `gofmt`ed
@@ -85,7 +93,7 @@ cover: ## Runs go test with coverage
 .PHONY: install
 install: ## Installs the executable or package
 	@echo "+ $@"
-	$(GO) install -a -tags "$(BUILDTAGS)" ${GO_LDFLAGS} ./cmd/${NAME}
+	$(GO) install -a -tags "$(BUILDTAGS)" ${GO_LDFLAGS} $(PKG)/cmd/${NAME}
 
 define buildpretty
 mkdir -p $(BUILDDIR)/$(1)/$(2);
