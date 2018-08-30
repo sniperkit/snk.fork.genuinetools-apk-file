@@ -35,7 +35,7 @@ build: $(NAME) ## Builds a dynamic executable or package
 
 $(NAME): $(wildcard *.go) $(wildcard */*.go) VERSION.txt
 	@echo "+ $@"
-	$(GO) build -tags "$(BUILDTAGS)" ${GO_LDFLAGS} -o $(NAME) .
+	$(GO) build -tags "$(BUILDTAGS)" ${GO_LDFLAGS} -o $(NAME) ./cmd/${NAME}
 
 .PHONY: static
 static: ## Builds a static executable
@@ -85,7 +85,7 @@ cover: ## Runs go test with coverage
 .PHONY: install
 install: ## Installs the executable or package
 	@echo "+ $@"
-	$(GO) install -a -tags "$(BUILDTAGS)" ${GO_LDFLAGS} .
+	$(GO) install -a -tags "$(BUILDTAGS)" ${GO_LDFLAGS} ./cmd/${NAME}
 
 define buildpretty
 mkdir -p $(BUILDDIR)/$(1)/$(2);
@@ -106,7 +106,7 @@ define buildrelease
 GOOS=$(1) GOARCH=$(2) CGO_ENABLED=0 $(GO) build \
 	 -o $(BUILDDIR)/$(NAME)-$(1)-$(2) \
 	 -a -tags "$(BUILDTAGS) static_build netgo" \
-	 -installsuffix netgo ${GO_LDFLAGS_STATIC} .;
+	 -installsuffix netgo ${GO_LDFLAGS_STATIC} ./cmd/${NAME};
 md5sum $(BUILDDIR)/$(NAME)-$(1)-$(2) > $(BUILDDIR)/$(NAME)-$(1)-$(2).md5;
 sha256sum $(BUILDDIR)/$(NAME)-$(1)-$(2) > $(BUILDDIR)/$(NAME)-$(1)-$(2).sha256;
 endef

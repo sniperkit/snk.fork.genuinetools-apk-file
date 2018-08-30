@@ -2,72 +2,129 @@
 
 
 [[projects]]
-  digest = "1:d043e5ae59276188d876090c261c311e146792c0908e08e67e766b1020a72d00"
+  digest = "1:a62f6ed230a8cd138a9efbe718e7d0b0294f139266f5f55cd942769a9aac8de2"
   name = "github.com/PuerkitoBio/goquery"
   packages = ["."]
-  pruneopts = "NUT"
+  pruneopts = "UT"
   revision = "dc2ec5c7ca4d9aae063b79b9f581dd3ea6afd2b2"
   version = "v1.4.1"
 
 [[projects]]
-  digest = "1:fc86904a62ac4bfff8cfbe94f42231ce3d8cea8fe2506d5293eaef468f8eaecf"
+  branch = "master"
+  digest = "1:6f1cea979946d760c3f9726923490f4ce6b427ec2cfd28824fdcc321aaa1dc91"
+  name = "github.com/agrison/go-tablib"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "4930582c22eec7bfc0e5b47e0246d5048a78fe49"
+
+[[projects]]
+  branch = "master"
+  digest = "1:c77dea0f5e8ca7f60127638a660c23b5183126bc4d59c89e2cad16737843fb51"
+  name = "github.com/agrison/mxj"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "1269f8afb3b42d0e7b9cf60041e8e187727c88d6"
+
+[[projects]]
+  digest = "1:66b3310cf22cdc96c35ef84ede4f7b9b370971c4025f394c89a2638729653b11"
   name = "github.com/andybalholm/cascadia"
   packages = ["."]
-  pruneopts = "NUT"
+  pruneopts = "UT"
   revision = "901648c87902174f774fac311d7f176f8647bdaa"
   version = "v1.0.0"
 
 [[projects]]
   branch = "master"
-  digest = "1:7cf0bc606bb5b12b2c431bd891679060d927083330118687898278bcf963ae8d"
-  name = "github.com/genuinetools/pkg"
-  packages = ["cli"]
-  pruneopts = "NUT"
-  revision = "cd7da1bd30dc725ffb0bababc615633f23654e0c"
+  digest = "1:f0a1921f5d67f9243c59193b3ac8af7050e4651def30dee864e170a677ede21c"
+  name = "github.com/bndr/gotabulate"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "bc555436bfd5d4e93a2dd35b462ce37e067afdda"
 
 [[projects]]
-  digest = "1:6989062eb7ccf25cf38bf4fe3dba097ee209f896cda42cefdca3927047bef7b6"
+  branch = "master"
+  digest = "1:14f498fc55a89776c562fa3510aeb7687356944a560c561c0e617af5f9c5f2c7"
+  name = "github.com/fatih/structs"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ebf56d35bba727c68ac77f56f2fcf90b181851aa"
+
+[[projects]]
+  branch = "master"
+  digest = "1:6ef4d6cb61f89688f3256f2e8ed147ed75700f3231523ed6234091575160a5fb"
+  name = "github.com/genuinetools/pkg"
+  packages = ["cli"]
+  pruneopts = "UT"
+  revision = "4038376dadd53f913de41663feae408ef23c8e8a"
+
+[[projects]]
+  digest = "1:cdb899c199f907ac9fb50495ec71212c95cb5b0e0a8ee0800da0238036091033"
+  name = "github.com/mattn/go-runewidth"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ce7b0b5c7b45a81508558cd1dba6bb1e4ddb51bb"
+  version = "v0.0.3"
+
+[[projects]]
+  digest = "1:d867dfa6751c8d7a435821ad3b736310c2ed68945d05b50fb9d23aee0540c8cc"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
-  pruneopts = "NUT"
-  revision = "c155da19408a8799da419ed3eeb0cb5db0ad5dbc"
-  version = "v1.0.5"
+  pruneopts = "UT"
+  revision = "3e01752db0189b9157070a0e1668a620f9a85da2"
+  version = "v1.0.6"
+
+[[projects]]
+  branch = "master"
+  digest = "1:f6d7308e75683979d39359de8ad04d3ae449212020bb6f126b2bf60d4dfb32ed"
+  name = "github.com/tealeg/xlsx"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f36fa3be8893d528004c0938e06b65c67f69b76f"
 
 [[projects]]
   branch = "master"
   digest = "1:3f3a05ae0b95893d90b9b3b5afdb79a9b3d96e4e36e099d841ae602e4aca0da8"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
-  pruneopts = "NUT"
-  revision = "a49355c7e3f8fe157a85be2f77e6e269a0f89602"
+  pruneopts = "UT"
+  revision = "614d502a4dac94afa3a6ce146bd1736da82514c6"
 
 [[projects]]
   branch = "master"
-  digest = "1:ee15023f3a869df3a9a871cd54da8651e211dc99ab6e19e87cca7ddac94a10e0"
+  digest = "1:0185c27476ac2aa653c9b932843b41409b9a42a8f38b09c8e25c8fb1fcd499c5"
   name = "golang.org/x/net"
   packages = [
     "html",
     "html/atom",
   ]
-  pruneopts = "NUT"
-  revision = "d0887baf81f4598189d4e12a37c6da86f0bba4d0"
+  pruneopts = "UT"
+  revision = "8a410e7b638dca158bf9e766925842f6651ff828"
 
 [[projects]]
   branch = "master"
-  digest = "1:64107e3c8f52f341891a565d117bf263ed396fe0c16bad19634b25be25debfaa"
+  digest = "1:9c99029818a3d4f53bcfd6c0158ca068aeacfecb29283f82a1f9c79b8d2a7da4"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
-  pruneopts = "NUT"
-  revision = "ac767d655b305d4e9612f5f6e33120b9176c4ad4"
+  pruneopts = "UT"
+  revision = "d99a578cf41bfccdeaf48b0845c823a4b8b0ad5e"
+
+[[projects]]
+  digest = "1:342378ac4dcb378a5448dd723f0784ae519383532f5e70ade24132c4c8693202"
+  name = "gopkg.in/yaml.v2"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
+  version = "v2.2.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
     "github.com/PuerkitoBio/goquery",
+    "github.com/agrison/go-tablib",
     "github.com/genuinetools/pkg/cli",
     "github.com/sirupsen/logrus",
   ]
