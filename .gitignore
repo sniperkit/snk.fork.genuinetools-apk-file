@@ -34,6 +34,8 @@ vendor/
 vendor/*
 vendor/**
 
+_vendor-*
+
 ###OSX###
 
 .DS_Store
